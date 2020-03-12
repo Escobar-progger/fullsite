@@ -1,7 +1,7 @@
 /*
-    Styles Author: Magomedov Murad Gapurovich +7(988)459-75-25
+    Styles Author: Magomedov Murad Gapurovich +7(988)459-75-25 and Gadzhisaidov Khalid Kazimagomedovich +7(989)887-38-32
     Version: 1 (BETA 06.03.2020)
-    
+
     Стили подкорректированы специально под дизайнерские макеты.
     Так же присутствуют стили для темных сайтов.
 */
@@ -12,9 +12,9 @@
 *{ margin: 0; padding: 0; } /* Отступы нам не нужны */
 
 body{
-	background: #fff;
+	background: #f9f9f9;
 	background-size: cover;
-    font-family: "Roboto", Arial, calibri, sans-serif;
+    font-family: "Circe", sans-serif !important;
     font-size: 17px;
 }
 
@@ -54,7 +54,7 @@ body{
 .input-text::before{
     height: 35px; width: auto;
     content: attr(placeholder);
-    position: absolute; 
+    position: absolute;
     z-index: -1;
     transition: .7s ease;
     line-height: 35px;
@@ -62,15 +62,15 @@ body{
 */
 
 input:focus .input-text::before{
-    
+
 }
 
-/*.input-text::after{ 
+/*.input-text::after{
     content: " ";
     background: #000;
     height: 1px; width: 0px;
     margin-top: -1px;
-    position: absolute; 
+    position: absolute;
     z-index: 100;
     transition: .7s ease;
 }
@@ -91,7 +91,7 @@ input{
 input:focus{
 }
 
-/* Buttons */
+/* Buttons
 button{
     height: 35px; width: 171px;
     background: rgba(0,0,0,0);
@@ -132,6 +132,7 @@ button.cancle:active{
     background: #AD3838;
     color: #fff;
 }
+*/
 
 /* Titles */
 h1{ font-size: 34px; line-height: 34px; font-weight: 100; }
@@ -146,24 +147,56 @@ h6{ font-size: 16px; line-height: 16px; font-weight: 100; }
 p{ font-size: 17px; color: rgba(0,0,0,.9); }
 
 
-/* href */
 
 
 /* Стили добавленные Халидом */
-.logo {
 
+/* Bootstrap под себя */
+.container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
+
+
+/* header */
 .logo img {
-    width: 40px;
-    border-radius: 50px;
+    width: 90px;
 }
-.collapse {
-        margin-left: 25%;
+.ath a {
+    color: #232323;
+}
+.ath a:hover {
+    color: #23232396;
 }
 .register {
-    
+    background-color: #7a00ff;
+    border: none;
+    color: #fff;
+    padding: 7px 20px 6px 20px;
+    border-radius: 5px;
+    transition: .3s;
 }
 .register:hover {
+    transition: .3s;
+    background-color: #212121d6;
     color: #fff;
+    box-shadow: 0px 0px 10px #23232345;
     text-decoration: none;
+}
+.auth {
+    margin: 0 !important;
+}
+
+
+
+
+
+
+
+/* content */
+.content {
+    padding: 5% 10px 15px 20px !important;
+}
+.content > .title-index > .about-index-text {
+    width: 30%;
 }
